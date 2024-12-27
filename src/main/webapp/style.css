@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Global Styling */
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(to bottom, #f0f8ff, #ffffff);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Welcome Message Styling */
+        #welcomeMessage {
+            color: white; /* Change text color to white */
+            background-color: green; /* Optionally keep the background green */
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #4CAF50; /* Green color */
+            padding: 16px 20px;
+            text-align: center;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 12px;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        }
+
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+
+        /* Heading Styling */
+        h2 {
+            text-align: center;
+            color: #4CAF50; /* Green color */
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <title>Mental Health Management</title>
+</head>
+<body>
+    <h2>Welcome to Mental Health Management</h2>
+
+    <div class="navbar">
+        <a href="/" class="active">Home</a>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="patientlogin">Patient Login</a></li>
+                <li><a href="doctorlogin">Doctor Login</a></li>
+                <li><a href="adminlogin">Admin Login</a></li>
+            </ul>
+        </div>
+        <a href="#" data-toggle="modal" data-target="#registrationModal">Registration</a>
+    </div>
+
+    <!-- Admin Login -->
+    <div id="welcomeMessage">Welcome to Admin Login</div>
+
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Registration</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="patientreg">Patient Registration</a></li>
+                        <li class="list-group-item"><a href="doctorreg">Doctor Registration</a></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
